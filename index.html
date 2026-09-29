@@ -387,6 +387,29 @@ body.modal-open { overflow:hidden; }
   .quick-stats strong { font-size:15px; }
   footer { flex-direction:column; gap:8px; }
 }
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contact-box {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 1px solid #26384f;
+    border-radius: 10px;
+    background: rgba(10, 15, 25, 0.7);
+    color: #e8eef7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.contact-box:hover {
+    border-color: #d4af37;
+    transform: translateY(-2px);
+}
 </style>
 </head>
 
@@ -444,11 +467,14 @@ body.modal-open { overflow:hidden; }
     <p>find me from below.</p>
 
     <div class="contact-links">
-        <p>📱 Mobile: 123456789</p>
-        <p>📧 Email: asdfgt@gmail.com</p>
-        <p>💻 GitHub: github.com/thojeswar</p>
-        <a href="thojeswar_QA_resume.docx" download>Download Resume</a>
-    </div>
+    <div class="contact-box">📱 Mobile: 123456789</div>
+    <div class="contact-box">📧 Email: asdfgt@gmail.com</div>
+    <div class="contact-box">💻 GitHub: github.com/thojeswar</div>
+
+    <a href="thojeswar_QA_resume.docx" class="contact-box" download>
+        📄 Download Resume
+    </a>
+</div>
 </section>
 </main>
 
